@@ -38,7 +38,7 @@
 #define HAVE_GETPAGESIZE 1
 
 /* Have glib2 library */
-#define HAVE_GLIB 1
+/* #undef HAVE_GLIB */
 
 /* Have gobject2 library */
 /* #undef HAVE_GOBJECT */
@@ -113,7 +113,7 @@
 #define HAVE_SYS_TYPES_H 1
 
 /* Have UCDN Unicode functions */
-/* #undef HAVE_UCDN */
+#define HAVE_UCDN 1
 
 /* Have Uniscribe library */
 /* #undef HAVE_UNISCRIBE */

@@ -90,37 +90,37 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-apple-darwin15.6.0
 host_triplet = x86_64-apple-darwin15.6.0
-am__append_1 = hb-test.h
-check_PROGRAMS = $(am__EXEEXT_4)
-noinst_PROGRAMS = $(am__EXEEXT_4)
-#am__append_2 = $(ICU_CFLAGS)
-#am__append_3 = $(top_builddir)/src/libharfbuzz-icu.la $(ICU_LIBS)
-am__append_4 = \
-	test-ot-tag \
-	$(NULL)
+#am__append_1 = hb-test.h
+#check_PROGRAMS = $(am__EXEEXT_4)
+#noinst_PROGRAMS = $(am__EXEEXT_4)
+##am__append_2 = $(ICU_CFLAGS)
+##am__append_3 = $(top_builddir)/src/libharfbuzz-icu.la $(ICU_LIBS)
+#am__append_4 = \
+#	test-ot-tag \
+#	$(NULL)
 
-am__append_5 = \
-	test-ot-math \
-	$(NULL)
+#am__append_5 = \
+#	test-ot-math \
+#	$(NULL)
 
-am__append_6 = \
-	fonts/MathTestFontEmpty.otf \
-	fonts/MathTestFontFull.otf \
-	fonts/MathTestFontNone.otf \
-	fonts/MathTestFontPartial1.otf \
-	fonts/MathTestFontPartial2.otf \
-	fonts/MathTestFontPartial3.otf \
-	fonts/MathTestFontPartial4.otf \
-	$(NULL)
+#am__append_6 = \
+#	fonts/MathTestFontEmpty.otf \
+#	fonts/MathTestFontFull.otf \
+#	fonts/MathTestFontNone.otf \
+#	fonts/MathTestFontPartial1.otf \
+#	fonts/MathTestFontPartial2.otf \
+#	fonts/MathTestFontPartial3.otf \
+#	fonts/MathTestFontPartial4.otf \
+#	$(NULL)
 
-#am__append_7 = $(ICU_CFLAGS)
-#am__append_8 = $(ICU_CFLAGS)
-am__append_9 = $(FREETYPE_CFLAGS)
-am__append_10 = $(FREETYPE_CFLAGS)
-TESTS = $(am__EXEEXT_4)
+##am__append_7 = $(ICU_CFLAGS)
+##am__append_8 = $(ICU_CFLAGS)
+#am__append_9 = $(FREETYPE_CFLAGS)
+#am__append_10 = $(FREETYPE_CFLAGS)
+#TESTS = $(am__EXEEXT_4)
 #	Can't do for now: --show-reachable=yes
-am__append_11 = log-valgrind.txt symbols-tested.txt \
-	symbols-exported.txt symbols-untested.txt
+#am__append_11 = log-valgrind.txt symbols-tested.txt \
+#	symbols-exported.txt symbols-untested.txt
 subdir = test/api
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/ax_pthread.m4 \
@@ -136,26 +136,26 @@ CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__EXEEXT_1 =
-am__EXEEXT_2 = test-ot-tag$(EXEEXT) \
-	$(am__EXEEXT_1)
-am__EXEEXT_3 = test-ot-math$(EXEEXT) \
-	$(am__EXEEXT_1)
-am__EXEEXT_4 = test-blob$(EXEEXT) test-buffer$(EXEEXT) \
-	test-common$(EXEEXT) test-font$(EXEEXT) \
-	test-object$(EXEEXT) test-set$(EXEEXT) \
-	test-shape$(EXEEXT) test-unicode$(EXEEXT) \
-	test-version$(EXEEXT) $(am__EXEEXT_1) \
-	$(am__EXEEXT_2) $(am__EXEEXT_3) \
-	test-c$(EXEEXT) test-cplusplus$(EXEEXT) \
-	$(am__EXEEXT_1)
+#am__EXEEXT_2 = test-ot-tag$(EXEEXT) \
+#	$(am__EXEEXT_1)
+#am__EXEEXT_3 = test-ot-math$(EXEEXT) \
+#	$(am__EXEEXT_1)
+#am__EXEEXT_4 = test-blob$(EXEEXT) test-buffer$(EXEEXT) \
+#	test-common$(EXEEXT) test-font$(EXEEXT) \
+#	test-object$(EXEEXT) test-set$(EXEEXT) \
+#	test-shape$(EXEEXT) test-unicode$(EXEEXT) \
+#	test-version$(EXEEXT) $(am__EXEEXT_1) \
+#	$(am__EXEEXT_2) $(am__EXEEXT_3) \
+#	test-c$(EXEEXT) test-cplusplus$(EXEEXT) \
+#	$(am__EXEEXT_1)
 PROGRAMS = $(noinst_PROGRAMS)
 test_blob_SOURCES = test-blob.c
 test_blob_OBJECTS = test-blob.$(OBJEXT)
 test_blob_LDADD = $(LDADD)
 am__DEPENDENCIES_1 =
-test_blob_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_blob_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
 am__v_lt_0 = --silent
@@ -163,78 +163,78 @@ am__v_lt_1 =
 test_buffer_SOURCES = test-buffer.c
 test_buffer_OBJECTS = test-buffer.$(OBJEXT)
 test_buffer_LDADD = $(LDADD)
-test_buffer_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_buffer_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 test_c_SOURCES = test-c.c
 test_c_OBJECTS = test_c-test-c.$(OBJEXT)
 test_c_LDADD = $(LDADD)
-test_c_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_c_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 test_common_SOURCES = test-common.c
 test_common_OBJECTS = test-common.$(OBJEXT)
 test_common_LDADD = $(LDADD)
-test_common_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_common_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 am__test_cplusplus_SOURCES_DIST = test-cplusplus.cc
-am_test_cplusplus_OBJECTS =  \
-	test_cplusplus-test-cplusplus.$(OBJEXT)
+#am_test_cplusplus_OBJECTS =  \
+#	test_cplusplus-test-cplusplus.$(OBJEXT)
 test_cplusplus_OBJECTS = $(am_test_cplusplus_OBJECTS)
 test_cplusplus_LDADD = $(LDADD)
-test_cplusplus_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_cplusplus_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 test_font_SOURCES = test-font.c
 test_font_OBJECTS = test-font.$(OBJEXT)
 test_font_LDADD = $(LDADD)
-test_font_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_font_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 test_object_SOURCES = test-object.c
 test_object_OBJECTS = test-object.$(OBJEXT)
 test_object_LDADD = $(LDADD)
-test_object_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_object_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 test_ot_math_SOURCES = test-ot-math.c
 test_ot_math_OBJECTS = test_ot_math-test-ot-math.$(OBJEXT)
-am__DEPENDENCIES_2 =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
-test_ot_math_DEPENDENCIES = $(am__DEPENDENCIES_2) \
-	$(am__DEPENDENCIES_1)
+#am__DEPENDENCIES_2 =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
+#test_ot_math_DEPENDENCIES = $(am__DEPENDENCIES_2) \
+#	$(am__DEPENDENCIES_1)
 test_ot_tag_SOURCES = test-ot-tag.c
 test_ot_tag_OBJECTS = test-ot-tag.$(OBJEXT)
 test_ot_tag_LDADD = $(LDADD)
-test_ot_tag_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_ot_tag_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 test_set_SOURCES = test-set.c
 test_set_OBJECTS = test-set.$(OBJEXT)
 test_set_LDADD = $(LDADD)
-test_set_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_set_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 test_shape_SOURCES = test-shape.c
 test_shape_OBJECTS = test-shape.$(OBJEXT)
 test_shape_LDADD = $(LDADD)
-test_shape_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_shape_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 test_unicode_SOURCES = test-unicode.c
 test_unicode_OBJECTS = test_unicode-test-unicode.$(OBJEXT)
-#am__DEPENDENCIES_3 = $(top_builddir)/src/libharfbuzz-icu.la \
-#	$(am__DEPENDENCIES_1)
-test_unicode_DEPENDENCIES = $(am__DEPENDENCIES_2) \
-	$(am__DEPENDENCIES_3)
+##am__DEPENDENCIES_3 = $(top_builddir)/src/libharfbuzz-icu.la \
+##	$(am__DEPENDENCIES_1)
+#test_unicode_DEPENDENCIES = $(am__DEPENDENCIES_2) \
+#	$(am__DEPENDENCIES_3)
 test_version_SOURCES = test-version.c
 test_version_OBJECTS = test-version.$(OBJEXT)
 test_version_LDADD = $(LDADD)
-test_version_DEPENDENCIES =  \
-	$(top_builddir)/src/libharfbuzz.la \
-	$(am__DEPENDENCIES_1)
+#test_version_DEPENDENCIES =  \
+#	$(top_builddir)/src/libharfbuzz.la \
+#	$(am__DEPENDENCIES_1)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -569,9 +569,9 @@ FREETYPE_CFLAGS = -I/usr/local/Cellar/freetype/2.5.5/include/freetype2
 FREETYPE_DEPS = freetype2 >= 12.0.6
 FREETYPE_LIBS = -L/usr/local/Cellar/freetype/2.5.5/lib -lfreetype
 GIT = ${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/tree/harfbuzz/src/missing git
-GLIB_CFLAGS = -I/usr/local/Cellar/glib/2.50.1/include/glib-2.0 -I/usr/local/Cellar/glib/2.50.1/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.39/include
+GLIB_CFLAGS = 
 GLIB_DEPS = glib-2.0 >= 2.38
-GLIB_LIBS = -L/usr/local/Cellar/glib/2.50.1/lib -L/usr/local/opt/gettext/lib -lglib-2.0 -lintl
+GLIB_LIBS = 
 GLIB_MKENUMS = 
 GOBJECT_CFLAGS = 
 GOBJECT_LIBS = 
@@ -697,49 +697,49 @@ EXTRA_DIST = $(am__append_1) $(am__append_6)
 CLEANFILES = $(am__append_11)
 DISTCLEANFILES = 
 MAINTAINERCLEANFILES = 
-AM_CPPFLAGS = -DSRCDIR="\"$(srcdir)\"" -I$(top_srcdir)/src/ -I$(top_builddir)/src/ $(GLIB_CFLAGS)
-LDADD = $(top_builddir)/src/libharfbuzz.la $(GLIB_LIBS)
+#AM_CPPFLAGS = -DSRCDIR="\"$(srcdir)\"" -I$(top_srcdir)/src/ -I$(top_builddir)/src/ $(GLIB_CFLAGS)
+#LDADD = $(top_builddir)/src/libharfbuzz.la $(GLIB_LIBS)
 
 # Tests for header compilation
-TEST_PROGS = test-blob test-buffer test-common \
-	test-font test-object test-set test-shape \
-	test-unicode test-version $(NULL) \
-	$(am__append_4) $(am__append_5) test-c \
-	test-cplusplus $(NULL)
-test_unicode_CPPFLAGS = $(AM_CPPFLAGS) $(GLIB_CFLAGS) \
-	$(am__append_2)
-test_unicode_LDADD = $(LDADD) $(am__append_3)
-test_ot_math_LDADD = $(LDADD) $(FREETYPE_LIBS)
-test_ot_math_CPPFLAGS = $(AM_CPPFLAGS) $(FREETYPE_CFLAGS)
-test_cplusplus_SOURCES = test-cplusplus.cc
-test_c_CPPFLAGS = $(AM_CPPFLAGS) $(am__append_7) \
-	$(am__append_9)
-test_cplusplus_CPPFLAGS = $(AM_CPPFLAGS) \
-	$(am__append_8) $(am__append_10)
-TESTS_ENVIRONMENT = \
-	MALLOC_CHECK_=2 \
-	MALLOC_PERTURB_=$$(($${RANDOM:-256} % 256)) \
-	G_DEBUG=gc-friendly \
-	G_SLICE=always-malloc \
-	srcdir=$(srcdir) \
-	G_TEST_SRCDIR=$(abs_srcdir) \
-	G_TEST_BUILDDIR=$(abs_builddir) \
-	$(NULL)
+#TEST_PROGS = test-blob test-buffer test-common \
+#	test-font test-object test-set test-shape \
+#	test-unicode test-version $(NULL) \
+#	$(am__append_4) $(am__append_5) test-c \
+#	test-cplusplus $(NULL)
+#test_unicode_CPPFLAGS = $(AM_CPPFLAGS) $(GLIB_CFLAGS) \
+#	$(am__append_2)
+#test_unicode_LDADD = $(LDADD) $(am__append_3)
+#test_ot_math_LDADD = $(LDADD) $(FREETYPE_LIBS)
+#test_ot_math_CPPFLAGS = $(AM_CPPFLAGS) $(FREETYPE_CFLAGS)
+#test_cplusplus_SOURCES = test-cplusplus.cc
+#test_c_CPPFLAGS = $(AM_CPPFLAGS) $(am__append_7) \
+#	$(am__append_9)
+#test_cplusplus_CPPFLAGS = $(AM_CPPFLAGS) \
+#	$(am__append_8) $(am__append_10)
+#TESTS_ENVIRONMENT = \
+#	MALLOC_CHECK_=2 \
+#	MALLOC_PERTURB_=$$(($${RANDOM:-256} % 256)) \
+#	G_DEBUG=gc-friendly \
+#	G_SLICE=always-malloc \
+#	srcdir=$(srcdir) \
+#	G_TEST_SRCDIR=$(abs_srcdir) \
+#	G_TEST_BUILDDIR=$(abs_builddir) \
+#	$(NULL)
 
 
 # check-gtester: Run tests under gtester
-GTESTER = gtester
+#GTESTER = gtester
 
 # Check tests under valgrind.  Saves log to log-valgrind.txt
-VALGRIND_FLAGS = \
-	--tool=memcheck --suppressions=$(srcdir)/.valgrind-suppressions \
-	--track-origins=yes \
-	--leak-check=yes
+#VALGRIND_FLAGS = \
+#	--tool=memcheck --suppressions=$(srcdir)/.valgrind-suppressions \
+#	--track-origins=yes \
+#	--leak-check=yes
 
-valgrind_verbose = $(valgrind_verbose_$(V))
-valgrind_verbose_ = $(valgrind_verbose_$(AM_DEFAULT_VERBOSITY))
-valgrind_verbose_0 = | \
-	grep '\(^[^=]\|ERROR SUMMARY\|definitely lost\|indirectly lost\)' | grep -v ': 0'
+#valgrind_verbose = $(valgrind_verbose_$(V))
+#valgrind_verbose_ = $(valgrind_verbose_$(AM_DEFAULT_VERBOSITY))
+#valgrind_verbose_0 = | \
+#	grep '\(^[^=]\|ERROR SUMMARY\|definitely lost\|indirectly lost\)' | grep -v ': 0'
 
 all: all-am
 
@@ -1436,41 +1436,41 @@ lib:
 	@$(MAKE) $(AM_MAKEFLAGS) -C $(top_builddir)/src lib
 
 # check-tool: Run tests under $(TOOL)
-check-tool:
-	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) check \
-	TESTS_ENVIRONMENT='$(TESTS_ENVIRONMENT) $(top_builddir)/libtool --mode=execute \
-	env $(TOOL)'
+#check-tool:
+#	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) check \
+#	TESTS_ENVIRONMENT='$(TESTS_ENVIRONMENT) $(top_builddir)/libtool --mode=execute \
+#	env $(TOOL)'
 # check-tool-raw: Run tests under $(TOOL), but don't run under libtool
-check-tool-raw:
-	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) check \
-	TESTS_ENVIRONMENT='$(TESTS_ENVIRONMENT) \
-	env $(TOOL)'
-check-gtester:
-	$(AM_V_at)$(MAKE) $(AM_MAKEFLGS) check-tool-raw TOOL="$(GTESTER) --verbose --keep-going"
-	$(EXTRA_VALGRIND_FLAGS)
+#check-tool-raw:
+#	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) check \
+#	TESTS_ENVIRONMENT='$(TESTS_ENVIRONMENT) \
+#	env $(TOOL)'
+#check-gtester:
+#	$(AM_V_at)$(MAKE) $(AM_MAKEFLGS) check-tool-raw TOOL="$(GTESTER) --verbose --keep-going"
+#	$(EXTRA_VALGRIND_FLAGS)
 # TODO: The following check does not fail if valgrind finds error.  It should.
-check-valgrind:
-	$(AM_V_at)$(MAKE) $(AM_MAKEFLGS) check-tool TOOL="valgrind $(VALGRIND_FLAGS)" \
-	2>&1 | tee log-valgrind.txt $(valgrind_verbose)
+#check-valgrind:
+#	$(AM_V_at)$(MAKE) $(AM_MAKEFLGS) check-tool TOOL="valgrind $(VALGRIND_FLAGS)" \
+#	2>&1 | tee log-valgrind.txt $(valgrind_verbose)
 
 # check-symbols: Finds untested API symbols
-symbols-tested.txt: $(TEST_PROGS)
-	$(AM_V_GEN)$(top_builddir)/libtool --mode=execute nm $^ \
-	| grep ' U hb_' | sed 's/.* U hb_/hb_/' \
-	| sort | uniq > $@.tmp && mv $@.tmp $@
-symbols-exported.txt: $(top_builddir)/src/.libs/libharfbuzz.so
-	$(AM_V_GEN)$(top_builddir)/libtool --mode=execute nm $^ \
-	| grep ' T ' | sed 's/.* T //' | grep -v '^\(_init\|_fini\)$$' \
-	| sort | uniq > $@.tmp && mv $@.tmp $@
-symbols-untested.txt: symbols-tested.txt symbols-exported.txt
-	$(AM_V_GEN)diff $^ > $@.tmp; mv $@.tmp $@
-check-symbols: symbols-untested.txt
-	@! cat $^ | grep .
+#symbols-tested.txt: $(TEST_PROGS)
+#	$(AM_V_GEN)$(top_builddir)/libtool --mode=execute nm $^ \
+#	| grep ' U hb_' | sed 's/.* U hb_/hb_/' \
+#	| sort | uniq > $@.tmp && mv $@.tmp $@
+#symbols-exported.txt: $(top_builddir)/src/.libs/libharfbuzz.so
+#	$(AM_V_GEN)$(top_builddir)/libtool --mode=execute nm $^ \
+#	| grep ' T ' | sed 's/.* T //' | grep -v '^\(_init\|_fini\)$$' \
+#	| sort | uniq > $@.tmp && mv $@.tmp $@
+#symbols-untested.txt: symbols-tested.txt symbols-exported.txt
+#	$(AM_V_GEN)diff $^ > $@.tmp; mv $@.tmp $@
+#check-symbols: symbols-untested.txt
+#	@! cat $^ | grep .
 
-#check-am: err-glib
-#err-glib:
-#	@echo "You need to have glib support enabled to run the tests"
-#	@exit 77
+check-am: err-glib
+err-glib:
+	@echo "You need to have glib support enabled to run the tests"
+	@exit 77
 
 .PHONY: check-symbols check-tool check-valgrind
 

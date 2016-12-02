@@ -383,9 +383,9 @@ FREETYPE_CFLAGS = -I/usr/local/Cellar/freetype/2.5.5/include/freetype2
 FREETYPE_DEPS = freetype2 >= 12.0.6
 FREETYPE_LIBS = -L/usr/local/Cellar/freetype/2.5.5/lib -lfreetype
 GIT = ${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/tree/harfbuzz/src/missing git
-GLIB_CFLAGS = -I/usr/local/Cellar/glib/2.50.1/include/glib-2.0 -I/usr/local/Cellar/glib/2.50.1/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre/8.39/include
+GLIB_CFLAGS = 
 GLIB_DEPS = glib-2.0 >= 2.38
-GLIB_LIBS = -L/usr/local/Cellar/glib/2.50.1/lib -L/usr/local/opt/gettext/lib -lglib-2.0 -lintl
+GLIB_LIBS = 
 GLIB_MKENUMS = 
 GOBJECT_CFLAGS = 
 GOBJECT_LIBS = 
