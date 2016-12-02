@@ -30,8 +30,8 @@ Kernel configured for up to 8 processors.
 Processor type: x86_64h (Intel x86-64h Haswell)
 Processors active: 0 1 2 3 4 5 6 7
 Primary memory available: 16.00 gigabytes
-Default processor set: 268 tasks, 1383 threads, 8 processors
-Load average: 0.32, Mach factor: 7.67
+Default processor set: 306 tasks, 1572 threads, 8 processors
+Load average: 0.96, Mach factor: 7.03
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -62,238 +62,238 @@ PATH: /Users/arielm/.rvm/bin
 ## Core tests. ##
 ## ----------- ##
 
-configure:2918: checking for a BSD-compatible install
-configure:2986: result: /usr/bin/install -c
-configure:2997: checking whether build environment is sane
-configure:3052: result: yes
-configure:3203: checking for a thread-safe mkdir -p
-configure:3242: result: ./install-sh -c -d
-configure:3249: checking for gawk
-configure:3279: result: no
-configure:3249: checking for mawk
-configure:3279: result: no
-configure:3249: checking for nawk
-configure:3279: result: no
-configure:3249: checking for awk
-configure:3265: found /usr/bin/awk
-configure:3276: result: awk
-configure:3287: checking whether make sets $(MAKE)
-configure:3309: result: yes
-configure:3338: checking whether make supports nested variables
-configure:3355: result: yes
-configure:3435: checking whether UID '501' is supported by ustar format
-configure:3438: result: yes
-configure:3445: checking whether GID '20' is supported by ustar format
-configure:3448: result: yes
-configure:3456: checking how to create a ustar tar archive
-configure:3467: tar --version
+configure:2921: checking for a BSD-compatible install
+configure:2989: result: /usr/bin/install -c
+configure:3000: checking whether build environment is sane
+configure:3055: result: yes
+configure:3206: checking for a thread-safe mkdir -p
+configure:3245: result: ./install-sh -c -d
+configure:3252: checking for gawk
+configure:3282: result: no
+configure:3252: checking for mawk
+configure:3282: result: no
+configure:3252: checking for nawk
+configure:3282: result: no
+configure:3252: checking for awk
+configure:3268: found /usr/bin/awk
+configure:3279: result: awk
+configure:3290: checking whether make sets $(MAKE)
+configure:3312: result: yes
+configure:3341: checking whether make supports nested variables
+configure:3358: result: yes
+configure:3438: checking whether UID '501' is supported by ustar format
+configure:3441: result: yes
+configure:3448: checking whether GID '20' is supported by ustar format
+configure:3451: result: yes
+configure:3459: checking how to create a ustar tar archive
+configure:3470: tar --version
 bsdtar 2.8.3 - libarchive 2.8.3
-configure:3470: $? = 0
-configure:3510: tardir=conftest.dir && eval tar --format=ustar -chf - "$tardir" >conftest.tar
-configure:3513: $? = 0
-configure:3517: tar -xf - <conftest.tar
-configure:3520: $? = 0
-configure:3522: cat conftest.dir/file
+configure:3473: $? = 0
+configure:3513: tardir=conftest.dir && eval tar --format=ustar -chf - "$tardir" >conftest.tar
+configure:3516: $? = 0
+configure:3520: tar -xf - <conftest.tar
+configure:3523: $? = 0
+configure:3525: cat conftest.dir/file
 GrepMe
-configure:3525: $? = 0
-configure:3538: result: gnutar
-configure:3607: checking whether make supports nested variables
-configure:3624: result: yes
-configure:3649: checking for style of include used by make
-configure:3677: result: GNU
-configure:3748: checking for gcc
-configure:3764: found /usr/bin/gcc
-configure:3775: result: gcc
-configure:4004: checking for C compiler version
-configure:4013: gcc --version >&5
+configure:3528: $? = 0
+configure:3541: result: gnutar
+configure:3609: checking whether make supports nested variables
+configure:3626: result: yes
+configure:3651: checking for style of include used by make
+configure:3679: result: GNU
+configure:3750: checking for gcc
+configure:3766: found /usr/bin/gcc
+configure:3777: result: gcc
+configure:4006: checking for C compiler version
+configure:4015: gcc --version >&5
 Apple LLVM version 7.3.0 (clang-703.0.31)
 Target: x86_64-apple-darwin15.6.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
-configure:4024: $? = 0
-configure:4013: gcc -v >&5
+configure:4026: $? = 0
+configure:4015: gcc -v >&5
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
 Apple LLVM version 7.3.0 (clang-703.0.31)
 Target: x86_64-apple-darwin15.6.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-configure:4024: $? = 0
-configure:4013: gcc -V >&5
+configure:4026: $? = 0
+configure:4015: gcc -V >&5
 clang: error: argument to '-V' is missing (expected 1 value)
 clang: error: no input files
-configure:4024: $? = 1
-configure:4013: gcc -qversion >&5
+configure:4026: $? = 1
+configure:4015: gcc -qversion >&5
 clang: error: unknown argument: '-qversion'
 clang: error: no input files
-configure:4024: $? = 1
-configure:4044: checking whether the C compiler works
-configure:4066: gcc    conftest.c  >&5
-configure:4070: $? = 0
-configure:4118: result: yes
-configure:4121: checking for C compiler default output file name
-configure:4123: result: a.out
-configure:4129: checking for suffix of executables
-configure:4136: gcc -o conftest    conftest.c  >&5
-configure:4140: $? = 0
-configure:4162: result: 
-configure:4184: checking whether we are cross compiling
-configure:4192: gcc -o conftest    conftest.c  >&5
-configure:4196: $? = 0
-configure:4203: ./conftest
-configure:4207: $? = 0
-configure:4222: result: no
-configure:4227: checking for suffix of object files
-configure:4249: gcc -c   conftest.c >&5
-configure:4253: $? = 0
-configure:4274: result: o
-configure:4278: checking whether we are using the GNU C compiler
-configure:4297: gcc -c   conftest.c >&5
-configure:4297: $? = 0
-configure:4306: result: yes
-configure:4315: checking whether gcc accepts -g
-configure:4335: gcc -c -g  conftest.c >&5
-configure:4335: $? = 0
-configure:4376: result: yes
-configure:4393: checking for gcc option to accept ISO C89
-configure:4456: gcc  -c -g -O2  conftest.c >&5
-configure:4456: $? = 0
-configure:4469: result: none needed
-configure:4494: checking whether gcc understands -c and -o together
-configure:4516: gcc -c conftest.c -o conftest2.o
-configure:4519: $? = 0
-configure:4516: gcc -c conftest.c -o conftest2.o
-configure:4519: $? = 0
-configure:4531: result: yes
-configure:4550: checking dependency style of gcc
-configure:4661: result: gcc3
-configure:4726: checking for ar
-configure:4742: found /usr/bin/ar
-configure:4753: result: ar
-configure:4779: checking the archiver (ar) interface
-configure:4795: gcc -c -g -O2  conftest.c >&5
-configure:4795: $? = 0
-configure:4797: ar cru libconftest.a conftest.o >&5
-configure:4800: $? = 0
-configure:4828: result: ar
-configure:4878: checking build system type
-configure:4892: result: x86_64-apple-darwin15.6.0
-configure:4912: checking host system type
-configure:4925: result: x86_64-apple-darwin15.6.0
-configure:4966: checking how to print strings
-configure:4993: result: printf
-configure:5014: checking for a sed that does not truncate output
-configure:5078: result: /usr/bin/sed
-configure:5096: checking for grep that handles long lines and -e
-configure:5154: result: /usr/bin/grep
-configure:5159: checking for egrep
-configure:5221: result: /usr/bin/grep -E
-configure:5226: checking for fgrep
-configure:5288: result: /usr/bin/grep -F
-configure:5323: checking for ld used by gcc
-configure:5390: result: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
-configure:5397: checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld
-configure:5412: result: no
-configure:5424: checking for BSD- or MS-compatible name lister (nm)
-configure:5478: result: /usr/bin/nm -B
-configure:5608: checking the name lister (/usr/bin/nm -B) interface
-configure:5615: gcc -c -g -O2  conftest.c >&5
-configure:5618: /usr/bin/nm -B "conftest.o"
-configure:5621: output
-0000000000000210 S _some_variable
-configure:5628: result: BSD nm
-configure:5631: checking whether ln -s works
-configure:5635: result: yes
-configure:5643: checking the maximum length of command line arguments
-configure:5774: result: 196608
-configure:5822: checking how to convert x86_64-apple-darwin15.6.0 file names to x86_64-apple-darwin15.6.0 format
-configure:5862: result: func_convert_file_noop
-configure:5869: checking how to convert x86_64-apple-darwin15.6.0 file names to toolchain format
-configure:5889: result: func_convert_file_noop
-configure:5896: checking for /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld option to reload object files
-configure:5903: result: -r
-configure:5977: checking for objdump
-configure:6007: result: no
-configure:6036: checking how to recognize dependent libraries
-configure:6236: result: pass_all
-configure:6321: checking for dlltool
-configure:6351: result: no
-configure:6381: checking how to associate runtime and link libraries
-configure:6408: result: printf %s\n
-configure:6532: checking for archiver @FILE support
-configure:6549: gcc -c -g -O2  conftest.c >&5
-configure:6549: $? = 0
-configure:6552: ar cru libconftest.a @conftest.lst >&5
+configure:4026: $? = 1
+configure:4046: checking whether the C compiler works
+configure:4068: gcc    conftest.c  >&5
+configure:4072: $? = 0
+configure:4120: result: yes
+configure:4123: checking for C compiler default output file name
+configure:4125: result: a.out
+configure:4131: checking for suffix of executables
+configure:4138: gcc -o conftest    conftest.c  >&5
+configure:4142: $? = 0
+configure:4164: result: 
+configure:4186: checking whether we are cross compiling
+configure:4194: gcc -o conftest    conftest.c  >&5
+configure:4198: $? = 0
+configure:4205: ./conftest
+configure:4209: $? = 0
+configure:4224: result: no
+configure:4229: checking for suffix of object files
+configure:4251: gcc -c   conftest.c >&5
+configure:4255: $? = 0
+configure:4276: result: o
+configure:4280: checking whether we are using the GNU C compiler
+configure:4299: gcc -c   conftest.c >&5
+configure:4299: $? = 0
+configure:4308: result: yes
+configure:4317: checking whether gcc accepts -g
+configure:4337: gcc -c -g  conftest.c >&5
+configure:4337: $? = 0
+configure:4378: result: yes
+configure:4395: checking for gcc option to accept ISO C89
+configure:4458: gcc  -c -g -O2  conftest.c >&5
+configure:4458: $? = 0
+configure:4471: result: none needed
+configure:4496: checking whether gcc understands -c and -o together
+configure:4518: gcc -c conftest.c -o conftest2.o
+configure:4521: $? = 0
+configure:4518: gcc -c conftest.c -o conftest2.o
+configure:4521: $? = 0
+configure:4533: result: yes
+configure:4552: checking dependency style of gcc
+configure:4663: result: gcc3
+configure:4728: checking for ar
+configure:4744: found /usr/bin/ar
+configure:4755: result: ar
+configure:4781: checking the archiver (ar) interface
+configure:4797: gcc -c -g -O2  conftest.c >&5
+configure:4797: $? = 0
+configure:4799: ar cru libconftest.a conftest.o >&5
+configure:4802: $? = 0
+configure:4830: result: ar
+configure:4880: checking build system type
+configure:4894: result: x86_64-apple-darwin15.6.0
+configure:4914: checking host system type
+configure:4927: result: x86_64-apple-darwin15.6.0
+configure:4968: checking how to print strings
+configure:4995: result: printf
+configure:5016: checking for a sed that does not truncate output
+configure:5080: result: /usr/bin/sed
+configure:5098: checking for grep that handles long lines and -e
+configure:5156: result: /usr/bin/grep
+configure:5161: checking for egrep
+configure:5223: result: /usr/bin/grep -E
+configure:5228: checking for fgrep
+configure:5290: result: /usr/bin/grep -F
+configure:5325: checking for ld used by gcc
+configure:5392: result: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+configure:5399: checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld
+configure:5414: result: no
+configure:5426: checking for BSD- or MS-compatible name lister (nm)
+configure:5475: result: /usr/bin/nm -B
+configure:5605: checking the name lister (/usr/bin/nm -B) interface
+configure:5612: gcc -c -g -O2  conftest.c >&5
+configure:5615: /usr/bin/nm -B "conftest.o"
+configure:5618: output
+0000000000000214 S _some_variable
+configure:5625: result: BSD nm
+configure:5628: checking whether ln -s works
+configure:5632: result: yes
+configure:5640: checking the maximum length of command line arguments
+configure:5771: result: 196608
+configure:5788: checking whether the shell understands some XSI constructs
+configure:5798: result: yes
+configure:5802: checking whether the shell understands "+="
+configure:5808: result: yes
+configure:5843: checking how to convert x86_64-apple-darwin15.6.0 file names to x86_64-apple-darwin15.6.0 format
+configure:5883: result: func_convert_file_noop
+configure:5890: checking how to convert x86_64-apple-darwin15.6.0 file names to toolchain format
+configure:5910: result: func_convert_file_noop
+configure:5917: checking for /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld option to reload object files
+configure:5924: result: -r
+configure:5998: checking for objdump
+configure:6028: result: no
+configure:6057: checking how to recognize dependent libraries
+configure:6255: result: pass_all
+configure:6340: checking for dlltool
+configure:6370: result: no
+configure:6400: checking how to associate runtime and link libraries
+configure:6427: result: printf %s\n
+configure:6551: checking for archiver @FILE support
+configure:6568: gcc -c -g -O2  conftest.c >&5
+configure:6568: $? = 0
+configure:6571: ar cru libconftest.a @conftest.lst >&5
 ar: @conftest.lst: No such file or directory
-configure:6555: $? = 1
-configure:6575: result: no
-configure:6633: checking for strip
-configure:6649: found /usr/bin/strip
-configure:6660: result: strip
-configure:6732: checking for ranlib
-configure:6748: found /usr/bin/ranlib
-configure:6759: result: ranlib
-configure:6861: checking command to parse /usr/bin/nm -B output from gcc object
-configure:7014: gcc -c -g -O2  conftest.c >&5
-configure:7017: $? = 0
-configure:7021: /usr/bin/nm -B conftest.o \| sed -n -e 's/^.*[ ]\([BCDEGRST][BCDEGRST]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
-configure:7024: $? = 0
+configure:6574: $? = 1
+configure:6594: result: no
+configure:6652: checking for strip
+configure:6668: found /usr/bin/strip
+configure:6679: result: strip
+configure:6751: checking for ranlib
+configure:6767: found /usr/bin/ranlib
+configure:6778: result: ranlib
+configure:6880: checking command to parse /usr/bin/nm -B output from gcc object
+configure:7000: gcc -c -g -O2  conftest.c >&5
+configure:7003: $? = 0
+configure:7007: /usr/bin/nm -B conftest.o \| sed -n -e 's/^.*[ ]\([BCDEGRST][BCDEGRST]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
+configure:7010: $? = 0
 cannot find nm_test_var in conftest.nm
-configure:7014: gcc -c -g -O2  conftest.c >&5
-configure:7017: $? = 0
-configure:7021: /usr/bin/nm -B conftest.o \| sed -n -e 's/^.*[ ]\([BCDEGRST][BCDEGRST]*\)[ ][ ]*_\([_A-Za-z][_A-Za-z0-9]*\)$/\1 _\2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
-configure:7024: $? = 0
-configure:7090: gcc -o conftest -g -O2   conftest.c conftstm.o >&5
+configure:7000: gcc -c -g -O2  conftest.c >&5
+configure:7003: $? = 0
+configure:7007: /usr/bin/nm -B conftest.o \| sed -n -e 's/^.*[ ]\([BCDEGRST][BCDEGRST]*\)[ ][ ]*_\([_A-Za-z][_A-Za-z0-9]*\)$/\1 _\2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
+configure:7010: $? = 0
+configure:7076: gcc -o conftest -g -O2   conftest.c conftstm.o >&5
 warning: (x86_64)  could not find object file symbol for symbol _main
-configure:7093: $? = 0
-configure:7131: result: ok
-configure:7178: checking for sysroot
-configure:7208: result: no
-configure:7215: checking for a working dd
-configure:7253: result: /bin/dd
-configure:7257: checking how to truncate binary pipes
-configure:7272: result: /bin/dd bs=4096 count=1
-configure:7601: checking for mt
-configure:7631: result: no
-configure:7651: checking if : is a manifest tool
-configure:7657: : '-?'
-configure:7665: result: no
-configure:7721: checking for dsymutil
-configure:7737: found /usr/bin/dsymutil
-configure:7748: result: dsymutil
-configure:7813: checking for nmedit
-configure:7829: found /usr/bin/nmedit
-configure:7840: result: nmedit
-configure:7905: checking for lipo
-configure:7921: found /usr/bin/lipo
-configure:7932: result: lipo
-configure:7997: checking for otool
-configure:8013: found /usr/bin/otool
-configure:8024: result: otool
-configure:8089: checking for otool64
-configure:8119: result: no
-configure:8164: checking for -single_module linker flag
+configure:7079: $? = 0
+configure:7117: result: ok
+configure:7154: checking for sysroot
+configure:7184: result: no
+configure:7453: checking for mt
+configure:7483: result: no
+configure:7503: checking if : is a manifest tool
+configure:7509: : '-?'
+configure:7517: result: no
+configure:7573: checking for dsymutil
+configure:7589: found /usr/bin/dsymutil
+configure:7600: result: dsymutil
+configure:7665: checking for nmedit
+configure:7681: found /usr/bin/nmedit
+configure:7692: result: nmedit
+configure:7757: checking for lipo
+configure:7773: found /usr/bin/lipo
+configure:7784: result: lipo
+configure:7849: checking for otool
+configure:7865: found /usr/bin/otool
+configure:7876: result: otool
+configure:7941: checking for otool64
+configure:7971: result: no
+configure:8016: checking for -single_module linker flag
 gcc -g -O2  -o libconftest.dylib -dynamiclib -Wl,-single_module conftest.c
-configure:8197: result: yes
-configure:8200: checking for -exported_symbols_list linker flag
-configure:8220: gcc -o conftest -g -O2   -Wl,-exported_symbols_list,conftest.sym conftest.c  >&5
-configure:8220: $? = 0
-configure:8230: result: yes
-configure:8233: checking for -force_load linker flag
+configure:8049: result: yes
+configure:8052: checking for -exported_symbols_list linker flag
+configure:8072: gcc -o conftest -g -O2   -Wl,-exported_symbols_list,conftest.sym conftest.c  >&5
+configure:8072: $? = 0
+configure:8082: result: yes
+configure:8085: checking for -force_load linker flag
 gcc -g -O2 -c -o conftest.o conftest.c
 ar cru libconftest.a conftest.o
 ranlib libconftest.a
 gcc -g -O2  -o conftest conftest.c -Wl,-force_load,./libconftest.a
-configure:8265: result: yes
-configure:8342: checking how to run the C preprocessor
-configure:8373: gcc -E  conftest.c
-configure:8373: $? = 0
-configure:8387: gcc -E  conftest.c
+configure:8117: result: yes
+configure:8159: checking how to run the C preprocessor
+configure:8190: gcc -E  conftest.c
+configure:8190: $? = 0
+configure:8204: gcc -E  conftest.c
 conftest.c:9:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^
 1 error generated.
-configure:8387: $? = 1
+configure:8204: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "HarfBuzz"
@@ -304,15 +304,15 @@ configure: failed program was:
 | #define PACKAGE_URL "http://harfbuzz.org/"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:8412: result: gcc -E
-configure:8432: gcc -E  conftest.c
-configure:8432: $? = 0
-configure:8446: gcc -E  conftest.c
+configure:8229: result: gcc -E
+configure:8249: gcc -E  conftest.c
+configure:8249: $? = 0
+configure:8263: gcc -E  conftest.c
 conftest.c:9:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^
 1 error generated.
-configure:8446: $? = 1
+configure:8263: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "HarfBuzz"
@@ -323,95 +323,95 @@ configure: failed program was:
 | #define PACKAGE_URL "http://harfbuzz.org/"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:8475: checking for ANSI C header files
-configure:8495: gcc -c -g -O2  conftest.c >&5
-configure:8495: $? = 0
-configure:8568: gcc -o conftest -g -O2   conftest.c  >&5
-configure:8568: $? = 0
-configure:8568: ./conftest
-configure:8568: $? = 0
-configure:8579: result: yes
-configure:8592: checking for sys/types.h
-configure:8592: gcc -c -g -O2  conftest.c >&5
-configure:8592: $? = 0
-configure:8592: result: yes
-configure:8592: checking for sys/stat.h
-configure:8592: gcc -c -g -O2  conftest.c >&5
-configure:8592: $? = 0
-configure:8592: result: yes
-configure:8592: checking for stdlib.h
-configure:8592: gcc -c -g -O2  conftest.c >&5
-configure:8592: $? = 0
-configure:8592: result: yes
-configure:8592: checking for string.h
-configure:8592: gcc -c -g -O2  conftest.c >&5
-configure:8592: $? = 0
-configure:8592: result: yes
-configure:8592: checking for memory.h
-configure:8592: gcc -c -g -O2  conftest.c >&5
-configure:8592: $? = 0
-configure:8592: result: yes
-configure:8592: checking for strings.h
-configure:8592: gcc -c -g -O2  conftest.c >&5
-configure:8592: $? = 0
-configure:8592: result: yes
-configure:8592: checking for inttypes.h
-configure:8592: gcc -c -g -O2  conftest.c >&5
-configure:8592: $? = 0
-configure:8592: result: yes
-configure:8592: checking for stdint.h
-configure:8592: gcc -c -g -O2  conftest.c >&5
-configure:8592: $? = 0
-configure:8592: result: yes
-configure:8592: checking for unistd.h
-configure:8592: gcc -c -g -O2  conftest.c >&5
-configure:8592: $? = 0
-configure:8592: result: yes
-configure:8606: checking for dlfcn.h
-configure:8606: gcc -c -g -O2  conftest.c >&5
-configure:8606: $? = 0
-configure:8606: result: yes
-configure:8861: checking for objdir
-configure:8876: result: .libs
-configure:9140: checking if gcc supports -fno-rtti -fno-exceptions
-configure:9158: gcc -c -g -O2  -fno-rtti -fno-exceptions conftest.c >&5
-configure:9162: $? = 0
-configure:9175: result: yes
-configure:9533: checking for gcc option to produce PIC
-configure:9540: result: -fno-common -DPIC
-configure:9548: checking if gcc PIC flag -fno-common -DPIC works
-configure:9566: gcc -c -g -O2  -fno-common -DPIC -DPIC conftest.c >&5
-configure:9570: $? = 0
-configure:9583: result: yes
-configure:9612: checking if gcc static flag -static works
-configure:9640: result: no
-configure:9655: checking if gcc supports -c -o file.o
-configure:9676: gcc -c -g -O2  -o out/conftest2.o conftest.c >&5
-configure:9680: $? = 0
-configure:9702: result: yes
-configure:9710: checking if gcc supports -c -o file.o
-configure:9757: result: yes
-configure:9790: checking whether the gcc linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries
-configure:11049: result: yes
-configure:11289: checking dynamic linker characteristics
-configure:12107: result: darwin15.6.0 dyld
-configure:12229: checking how to hardcode library paths into programs
-configure:12254: result: immediate
-configure:12802: checking whether stripping libraries is possible
-configure:12816: result: yes
-configure:12842: checking if libtool supports shared libraries
-configure:12844: result: yes
-configure:12847: checking whether to build shared libraries
-configure:12872: result: yes
-configure:12875: checking whether to build static libraries
-configure:12879: result: no
-configure:12919: checking minix/config.h usability
-configure:12919: gcc -c -g -O2  conftest.c >&5
+configure:8292: checking for ANSI C header files
+configure:8312: gcc -c -g -O2  conftest.c >&5
+configure:8312: $? = 0
+configure:8385: gcc -o conftest -g -O2   conftest.c  >&5
+configure:8385: $? = 0
+configure:8385: ./conftest
+configure:8385: $? = 0
+configure:8396: result: yes
+configure:8409: checking for sys/types.h
+configure:8409: gcc -c -g -O2  conftest.c >&5
+configure:8409: $? = 0
+configure:8409: result: yes
+configure:8409: checking for sys/stat.h
+configure:8409: gcc -c -g -O2  conftest.c >&5
+configure:8409: $? = 0
+configure:8409: result: yes
+configure:8409: checking for stdlib.h
+configure:8409: gcc -c -g -O2  conftest.c >&5
+configure:8409: $? = 0
+configure:8409: result: yes
+configure:8409: checking for string.h
+configure:8409: gcc -c -g -O2  conftest.c >&5
+configure:8409: $? = 0
+configure:8409: result: yes
+configure:8409: checking for memory.h
+configure:8409: gcc -c -g -O2  conftest.c >&5
+configure:8409: $? = 0
+configure:8409: result: yes
+configure:8409: checking for strings.h
+configure:8409: gcc -c -g -O2  conftest.c >&5
+configure:8409: $? = 0
+configure:8409: result: yes
+configure:8409: checking for inttypes.h
+configure:8409: gcc -c -g -O2  conftest.c >&5
+configure:8409: $? = 0
+configure:8409: result: yes
+configure:8409: checking for stdint.h
+configure:8409: gcc -c -g -O2  conftest.c >&5
+configure:8409: $? = 0
+configure:8409: result: yes
+configure:8409: checking for unistd.h
+configure:8409: gcc -c -g -O2  conftest.c >&5
+configure:8409: $? = 0
+configure:8409: result: yes
+configure:8423: checking for dlfcn.h
+configure:8423: gcc -c -g -O2  conftest.c >&5
+configure:8423: $? = 0
+configure:8423: result: yes
+configure:8628: checking for objdir
+configure:8643: result: .libs
+configure:8914: checking if gcc supports -fno-rtti -fno-exceptions
+configure:8932: gcc -c -g -O2  -fno-rtti -fno-exceptions conftest.c >&5
+configure:8936: $? = 0
+configure:8949: result: yes
+configure:9276: checking for gcc option to produce PIC
+configure:9283: result: -fno-common -DPIC
+configure:9291: checking if gcc PIC flag -fno-common -DPIC works
+configure:9309: gcc -c -g -O2  -fno-common -DPIC -DPIC conftest.c >&5
+configure:9313: $? = 0
+configure:9326: result: yes
+configure:9355: checking if gcc static flag -static works
+configure:9383: result: no
+configure:9398: checking if gcc supports -c -o file.o
+configure:9419: gcc -c -g -O2  -o out/conftest2.o conftest.c >&5
+configure:9423: $? = 0
+configure:9445: result: yes
+configure:9453: checking if gcc supports -c -o file.o
+configure:9500: result: yes
+configure:9533: checking whether the gcc linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries
+configure:10690: result: yes
+configure:10930: checking dynamic linker characteristics
+configure:11664: result: darwin15.6.0 dyld
+configure:11771: checking how to hardcode library paths into programs
+configure:11796: result: immediate
+configure:12336: checking whether stripping libraries is possible
+configure:12350: result: yes
+configure:12376: checking if libtool supports shared libraries
+configure:12378: result: yes
+configure:12381: checking whether to build shared libraries
+configure:12402: result: yes
+configure:12405: checking whether to build static libraries
+configure:12409: result: no
+configure:12449: checking minix/config.h usability
+configure:12449: gcc -c -g -O2  conftest.c >&5
 conftest.c:54:10: fatal error: 'minix/config.h' file not found
 #include <minix/config.h>
          ^
 1 error generated.
-configure:12919: $? = 1
+configure:12449: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "HarfBuzz"
@@ -467,14 +467,14 @@ configure: failed program was:
 | # include <unistd.h>
 | #endif
 | #include <minix/config.h>
-configure:12919: result: no
-configure:12919: checking minix/config.h presence
-configure:12919: gcc -E  conftest.c
+configure:12449: result: no
+configure:12449: checking minix/config.h presence
+configure:12449: gcc -E  conftest.c
 conftest.c:21:10: fatal error: 'minix/config.h' file not found
 #include <minix/config.h>
          ^
 1 error generated.
-configure:12919: $? = 1
+configure:12449: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "HarfBuzz"
@@ -497,93 +497,93 @@ configure: failed program was:
 | #define LT_OBJDIR ".libs/"
 | /* end confdefs.h.  */
 | #include <minix/config.h>
-configure:12919: result: no
-configure:12919: checking for minix/config.h
-configure:12919: result: no
-configure:12940: checking whether it is safe to define __EXTENSIONS__
-configure:12958: gcc -c -g -O2  conftest.c >&5
-configure:12958: $? = 0
-configure:12965: result: yes
-configure:13027: checking for gcc
-configure:13054: result: gcc
-configure:13283: checking for C compiler version
-configure:13292: gcc --version >&5
+configure:12449: result: no
+configure:12449: checking for minix/config.h
+configure:12449: result: no
+configure:12470: checking whether it is safe to define __EXTENSIONS__
+configure:12488: gcc -c -g -O2  conftest.c >&5
+configure:12488: $? = 0
+configure:12495: result: yes
+configure:12557: checking for gcc
+configure:12584: result: gcc
+configure:12813: checking for C compiler version
+configure:12822: gcc --version >&5
 Apple LLVM version 7.3.0 (clang-703.0.31)
 Target: x86_64-apple-darwin15.6.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
-configure:13303: $? = 0
-configure:13292: gcc -v >&5
+configure:12833: $? = 0
+configure:12822: gcc -v >&5
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
 Apple LLVM version 7.3.0 (clang-703.0.31)
 Target: x86_64-apple-darwin15.6.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-configure:13303: $? = 0
-configure:13292: gcc -V >&5
+configure:12833: $? = 0
+configure:12822: gcc -V >&5
 clang: error: argument to '-V' is missing (expected 1 value)
 clang: error: no input files
-configure:13303: $? = 1
-configure:13292: gcc -qversion >&5
+configure:12833: $? = 1
+configure:12822: gcc -qversion >&5
 clang: error: unknown argument: '-qversion'
 clang: error: no input files
-configure:13303: $? = 1
-configure:13307: checking whether we are using the GNU C compiler
-configure:13335: result: yes
-configure:13344: checking whether gcc accepts -g
-configure:13405: result: yes
-configure:13422: checking for gcc option to accept ISO C89
-configure:13498: result: none needed
-configure:13523: checking whether gcc understands -c and -o together
-configure:13560: result: yes
-configure:13579: checking dependency style of gcc
-configure:13690: result: gcc3
-configure:13764: checking for g++
-configure:13780: found /usr/bin/g++
-configure:13791: result: g++
-configure:13818: checking for C++ compiler version
-configure:13827: g++ --version >&5
+configure:12833: $? = 1
+configure:12837: checking whether we are using the GNU C compiler
+configure:12865: result: yes
+configure:12874: checking whether gcc accepts -g
+configure:12935: result: yes
+configure:12952: checking for gcc option to accept ISO C89
+configure:13028: result: none needed
+configure:13053: checking whether gcc understands -c and -o together
+configure:13090: result: yes
+configure:13109: checking dependency style of gcc
+configure:13220: result: gcc3
+configure:13294: checking for g++
+configure:13310: found /usr/bin/g++
+configure:13321: result: g++
+configure:13348: checking for C++ compiler version
+configure:13357: g++ --version >&5
 Apple LLVM version 7.3.0 (clang-703.0.31)
 Target: x86_64-apple-darwin15.6.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
-configure:13838: $? = 0
-configure:13827: g++ -v >&5
+configure:13368: $? = 0
+configure:13357: g++ -v >&5
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
 Apple LLVM version 7.3.0 (clang-703.0.31)
 Target: x86_64-apple-darwin15.6.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-configure:13838: $? = 0
-configure:13827: g++ -V >&5
+configure:13368: $? = 0
+configure:13357: g++ -V >&5
 clang: error: argument to '-V' is missing (expected 1 value)
 clang: error: no input files
-configure:13838: $? = 1
-configure:13827: g++ -qversion >&5
+configure:13368: $? = 1
+configure:13357: g++ -qversion >&5
 clang: error: unknown argument: '-qversion'
 clang: error: no input files
-configure:13838: $? = 1
-configure:13842: checking whether we are using the GNU C++ compiler
-configure:13861: g++ -c   conftest.cpp >&5
-configure:13861: $? = 0
-configure:13870: result: yes
-configure:13879: checking whether g++ accepts -g
-configure:13899: g++ -c -g  conftest.cpp >&5
-configure:13899: $? = 0
-configure:13940: result: yes
-configure:13965: checking dependency style of g++
-configure:14076: result: gcc3
-configure:14109: checking how to run the C++ preprocessor
-configure:14136: g++ -E  conftest.cpp
-configure:14136: $? = 0
-configure:14150: g++ -E  conftest.cpp
+configure:13368: $? = 1
+configure:13372: checking whether we are using the GNU C++ compiler
+configure:13391: g++ -c   conftest.cpp >&5
+configure:13391: $? = 0
+configure:13400: result: yes
+configure:13409: checking whether g++ accepts -g
+configure:13429: g++ -c -g  conftest.cpp >&5
+configure:13429: $? = 0
+configure:13470: result: yes
+configure:13495: checking dependency style of g++
+configure:13606: result: gcc3
+configure:13639: checking how to run the C++ preprocessor
+configure:13666: g++ -E  conftest.cpp
+configure:13666: $? = 0
+configure:13680: g++ -E  conftest.cpp
 conftest.cpp:26:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^
 1 error generated.
-configure:14150: $? = 1
+configure:13680: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "HarfBuzz"
@@ -611,15 +611,15 @@ configure: failed program was:
 | #define _TANDEM_SOURCE 1
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:14175: result: g++ -E
-configure:14195: g++ -E  conftest.cpp
-configure:14195: $? = 0
-configure:14209: g++ -E  conftest.cpp
+configure:13705: result: g++ -E
+configure:13725: g++ -E  conftest.cpp
+configure:13725: $? = 0
+configure:13739: g++ -E  conftest.cpp
 conftest.cpp:26:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^
 1 error generated.
-configure:14209: $? = 1
+configure:13739: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "HarfBuzz"
@@ -647,188 +647,188 @@ configure: failed program was:
 | #define _TANDEM_SOURCE 1
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:14371: checking for ld used by g++
-configure:14438: result: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
-configure:14445: checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld
-configure:14460: result: no
-configure:14515: checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries
-configure:15588: result: yes
-configure:15624: g++ -c -g -O2  conftest.cpp >&5
-configure:15627: $? = 0
-configure:16108: checking for g++ option to produce PIC
-configure:16115: result: -fno-common -DPIC
-configure:16123: checking if g++ PIC flag -fno-common -DPIC works
-configure:16141: g++ -c -g -O2  -fno-common -DPIC -DPIC conftest.cpp >&5
-configure:16145: $? = 0
-configure:16158: result: yes
-configure:16181: checking if g++ static flag -static works
-configure:16209: result: no
-configure:16221: checking if g++ supports -c -o file.o
-configure:16242: g++ -c -g -O2  -o out/conftest2.o conftest.cpp >&5
-configure:16246: $? = 0
-configure:16268: result: yes
-configure:16273: checking if g++ supports -c -o file.o
-configure:16320: result: yes
-configure:16350: checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries
-configure:16390: result: yes
-configure:16531: checking dynamic linker characteristics
-configure:17276: result: darwin15.6.0 dyld
-configure:17341: checking how to hardcode library paths into programs
-configure:17366: result: immediate
-configure:17413: checking for special C compiler options needed for large files
-configure:17458: result: no
-configure:17464: checking for _FILE_OFFSET_BITS value needed for large files
-configure:17489: gcc -c -g -O2  conftest.c >&5
-configure:17489: $? = 0
-configure:17521: result: no
-configure:17655: checking for pkg-config
-configure:17673: found /usr/local/bin/pkg-config
-configure:17685: result: /usr/local/bin/pkg-config
-configure:17710: checking pkg-config is at least version 0.20
-configure:17713: result: yes
-configure:17758: checking for gtk-doc
-configure:17761: $PKG_CONFIG --exists --print-errors "$gtk_doc_requires"
-configure:17764: $? = 0
-configure:17770: result: yes
-configure:17784: checking for gtkdoc-check
-configure:17800: found /usr/local/bin/gtkdoc-check
-configure:17811: result: gtkdoc-check.test
-configure:17821: checking for gtkdoc-check
-configure:17839: found /usr/local/bin/gtkdoc-check
-configure:17851: result: /usr/local/bin/gtkdoc-check
-configure:17863: checking for gtkdoc-rebase
-configure:17881: found /usr/local/bin/gtkdoc-rebase
-configure:17893: result: /usr/local/bin/gtkdoc-rebase
-configure:17907: checking for gtkdoc-mkpdf
-configure:17925: found /usr/local/bin/gtkdoc-mkpdf
-configure:17937: result: /usr/local/bin/gtkdoc-mkpdf
-configure:17965: checking whether to build gtk-doc documentation
-configure:17967: result: no
-configure:17980: checking for GTKDOC_DEPS
-configure:17988: $PKG_CONFIG --exists --print-errors "glib-2.0 >= 2.10.0 gobject-2.0  >= 2.10.0"
-configure:17991: $? = 0
-configure:18006: $PKG_CONFIG --exists --print-errors "glib-2.0 >= 2.10.0 gobject-2.0  >= 2.10.0"
-configure:18009: $? = 0
-configure:18045: result: yes
-configure:18133: checking for atexit
-configure:18133: gcc -o conftest -g -O2   conftest.c  >&5
-configure:18133: $? = 0
-configure:18133: result: yes
-configure:18133: checking for mprotect
-configure:18133: gcc -o conftest -g -O2   conftest.c  >&5
-configure:18133: $? = 0
-configure:18133: result: yes
-configure:18133: checking for sysconf
-configure:18133: gcc -o conftest -g -O2   conftest.c  >&5
-configure:18133: $? = 0
-configure:18133: result: yes
-configure:18133: checking for getpagesize
-configure:18133: gcc -o conftest -g -O2   conftest.c  >&5
-configure:18133: $? = 0
-configure:18133: result: yes
-configure:18133: checking for mmap
-configure:18133: gcc -o conftest -g -O2   conftest.c  >&5
-configure:18133: $? = 0
-configure:18133: result: yes
-configure:18133: checking for isatty
-configure:18133: gcc -o conftest -g -O2   conftest.c  >&5
-configure:18133: $? = 0
-configure:18133: result: yes
-configure:18145: checking for unistd.h
-configure:18145: result: yes
-configure:18145: checking sys/mman.h usability
-configure:18145: gcc -c -g -O2  conftest.c >&5
-configure:18145: $? = 0
-configure:18145: result: yes
-configure:18145: checking sys/mman.h presence
-configure:18145: gcc -E  conftest.c
-configure:18145: $? = 0
-configure:18145: result: yes
-configure:18145: checking for sys/mman.h
-configure:18145: result: yes
-configure:18160: checking alignment of struct{char;}
-configure:18165: gcc -o conftest -g -O2   conftest.c  >&5
+configure:13908: checking for ld used by g++
+configure:13975: result: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+configure:13982: checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld
+configure:13997: result: no
+configure:14052: checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries
+configure:15054: result: yes
+configure:15090: g++ -c -g -O2  conftest.cpp >&5
+configure:15093: $? = 0
+configure:15613: checking for g++ option to produce PIC
+configure:15620: result: -fno-common -DPIC
+configure:15628: checking if g++ PIC flag -fno-common -DPIC works
+configure:15646: g++ -c -g -O2  -fno-common -DPIC -DPIC conftest.cpp >&5
+configure:15650: $? = 0
+configure:15663: result: yes
+configure:15686: checking if g++ static flag -static works
+configure:15714: result: no
+configure:15726: checking if g++ supports -c -o file.o
+configure:15747: g++ -c -g -O2  -o out/conftest2.o conftest.cpp >&5
+configure:15751: $? = 0
+configure:15773: result: yes
+configure:15778: checking if g++ supports -c -o file.o
+configure:15825: result: yes
+configure:15855: checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries
+configure:15894: result: yes
+configure:16035: checking dynamic linker characteristics
+configure:16703: result: darwin15.6.0 dyld
+configure:16756: checking how to hardcode library paths into programs
+configure:16781: result: immediate
+configure:16828: checking for special C compiler options needed for large files
+configure:16873: result: no
+configure:16879: checking for _FILE_OFFSET_BITS value needed for large files
+configure:16904: gcc -c -g -O2  conftest.c >&5
+configure:16904: $? = 0
+configure:16936: result: no
+configure:17070: checking for pkg-config
+configure:17088: found /usr/local/bin/pkg-config
+configure:17100: result: /usr/local/bin/pkg-config
+configure:17125: checking pkg-config is at least version 0.20
+configure:17128: result: yes
+configure:17173: checking for gtk-doc
+configure:17176: $PKG_CONFIG --exists --print-errors "$gtk_doc_requires"
+configure:17179: $? = 0
+configure:17185: result: yes
+configure:17199: checking for gtkdoc-check
+configure:17215: found /usr/local/bin/gtkdoc-check
+configure:17226: result: gtkdoc-check.test
+configure:17236: checking for gtkdoc-check
+configure:17254: found /usr/local/bin/gtkdoc-check
+configure:17266: result: /usr/local/bin/gtkdoc-check
+configure:17278: checking for gtkdoc-rebase
+configure:17296: found /usr/local/bin/gtkdoc-rebase
+configure:17308: result: /usr/local/bin/gtkdoc-rebase
+configure:17322: checking for gtkdoc-mkpdf
+configure:17340: found /usr/local/bin/gtkdoc-mkpdf
+configure:17352: result: /usr/local/bin/gtkdoc-mkpdf
+configure:17380: checking whether to build gtk-doc documentation
+configure:17382: result: no
+configure:17395: checking for GTKDOC_DEPS
+configure:17403: $PKG_CONFIG --exists --print-errors "glib-2.0 >= 2.10.0 gobject-2.0  >= 2.10.0"
+configure:17406: $? = 0
+configure:17421: $PKG_CONFIG --exists --print-errors "glib-2.0 >= 2.10.0 gobject-2.0  >= 2.10.0"
+configure:17424: $? = 0
+configure:17460: result: yes
+configure:17548: checking for atexit
+configure:17548: gcc -o conftest -g -O2   conftest.c  >&5
+configure:17548: $? = 0
+configure:17548: result: yes
+configure:17548: checking for mprotect
+configure:17548: gcc -o conftest -g -O2   conftest.c  >&5
+configure:17548: $? = 0
+configure:17548: result: yes
+configure:17548: checking for sysconf
+configure:17548: gcc -o conftest -g -O2   conftest.c  >&5
+configure:17548: $? = 0
+configure:17548: result: yes
+configure:17548: checking for getpagesize
+configure:17548: gcc -o conftest -g -O2   conftest.c  >&5
+configure:17548: $? = 0
+configure:17548: result: yes
+configure:17548: checking for mmap
+configure:17548: gcc -o conftest -g -O2   conftest.c  >&5
+configure:17548: $? = 0
+configure:17548: result: yes
+configure:17548: checking for isatty
+configure:17548: gcc -o conftest -g -O2   conftest.c  >&5
+configure:17548: $? = 0
+configure:17548: result: yes
+configure:17560: checking for unistd.h
+configure:17560: result: yes
+configure:17560: checking sys/mman.h usability
+configure:17560: gcc -c -g -O2  conftest.c >&5
+configure:17560: $? = 0
+configure:17560: result: yes
+configure:17560: checking sys/mman.h presence
+configure:17560: gcc -E  conftest.c
+configure:17560: $? = 0
+configure:17560: result: yes
+configure:17560: checking for sys/mman.h
+configure:17560: result: yes
+configure:17575: checking alignment of struct{char;}
+configure:17580: gcc -o conftest -g -O2   conftest.c  >&5
 conftest.c:70:33: warning: declaration does not declare anything [-Wmissing-declarations]
 typedef struct { char x; struct{char;} y; } ac__type_alignof_;
                                 ^~~~
 1 warning generated.
-configure:18165: $? = 0
-configure:18165: ./conftest
-configure:18165: $? = 0
-configure:18183: result: 1
-configure:18233: checking for native Win32
-configure:18240: result: no
-configure:18371: checking whether pthreads work with -pthread
-configure:18459: gcc -o conftest -g -O2 -pthread   -Bsymbolic-functions conftest.c   >&5
-configure:18459: $? = 0
-configure:18468: result: yes
-configure:18487: checking for joinable pthread attribute
-configure:18502: gcc -o conftest -g -O2 -pthread   -Bsymbolic-functions conftest.c   >&5
-configure:18502: $? = 0
-configure:18508: result: PTHREAD_CREATE_JOINABLE
-configure:18518: checking if more special flags are required for pthreads
-configure:18532: result: -D_THREAD_SAFE
-configure:18538: checking for PTHREAD_PRIO_INHERIT
-configure:18556: gcc -o conftest -g -O2 -pthread   -Bsymbolic-functions conftest.c   >&5
-configure:18556: $? = 0
-configure:18565: result: yes
-configure:18925: checking for CAIRO
-configure:18933: $PKG_CONFIG --exists --print-errors "cairo >= 1.8.0"
+configure:17580: $? = 0
+configure:17580: ./conftest
+configure:17580: $? = 0
+configure:17598: result: 1
+configure:17648: checking for native Win32
+configure:17655: result: no
+configure:17786: checking whether pthreads work with -pthread
+configure:17874: gcc -o conftest -g -O2 -pthread   -Bsymbolic-functions conftest.c   >&5
+configure:17874: $? = 0
+configure:17883: result: yes
+configure:17902: checking for joinable pthread attribute
+configure:17917: gcc -o conftest -g -O2 -pthread   -Bsymbolic-functions conftest.c   >&5
+configure:17917: $? = 0
+configure:17923: result: PTHREAD_CREATE_JOINABLE
+configure:17933: checking if more special flags are required for pthreads
+configure:17947: result: -D_THREAD_SAFE
+configure:17953: checking for PTHREAD_PRIO_INHERIT
+configure:17971: gcc -o conftest -g -O2 -pthread   -Bsymbolic-functions conftest.c   >&5
+configure:17971: $? = 0
+configure:17980: result: yes
+configure:18440: checking for CAIRO
+configure:18448: $PKG_CONFIG --exists --print-errors "cairo >= 1.8.0"
 Package cairo was not found in the pkg-config search path.
 Perhaps you should add the directory containing `cairo.pc'
 to the PKG_CONFIG_PATH environment variable
 No package 'cairo' found
-configure:18936: $? = 1
-configure:18951: $PKG_CONFIG --exists --print-errors "cairo >= 1.8.0"
+configure:18451: $? = 1
+configure:18466: $PKG_CONFIG --exists --print-errors "cairo >= 1.8.0"
 Package cairo was not found in the pkg-config search path.
 Perhaps you should add the directory containing `cairo.pc'
 to the PKG_CONFIG_PATH environment variable
 No package 'cairo' found
-configure:18954: $? = 1
+configure:18469: $? = 1
 No package 'cairo' found
-configure:18982: result: no
-configure:19113: checking for FONTCONFIG
-configure:19121: $PKG_CONFIG --exists --print-errors "fontconfig"
-configure:19124: $? = 0
-configure:19139: $PKG_CONFIG --exists --print-errors "fontconfig"
-configure:19142: $? = 0
-configure:19178: result: yes
-configure:19213: checking for ICU
-configure:19221: $PKG_CONFIG --exists --print-errors "icu-uc"
+configure:18497: result: no
+configure:18628: checking for FONTCONFIG
+configure:18636: $PKG_CONFIG --exists --print-errors "fontconfig"
+configure:18639: $? = 0
+configure:18654: $PKG_CONFIG --exists --print-errors "fontconfig"
+configure:18657: $? = 0
+configure:18693: result: yes
+configure:18728: checking for ICU
+configure:18736: $PKG_CONFIG --exists --print-errors "icu-uc"
 Package icu-uc was not found in the pkg-config search path.
 Perhaps you should add the directory containing `icu-uc.pc'
 to the PKG_CONFIG_PATH environment variable
 No package 'icu-uc' found
-configure:19224: $? = 1
-configure:19239: $PKG_CONFIG --exists --print-errors "icu-uc"
+configure:18739: $? = 1
+configure:18754: $PKG_CONFIG --exists --print-errors "icu-uc"
 Package icu-uc was not found in the pkg-config search path.
 Perhaps you should add the directory containing `icu-uc.pc'
 to the PKG_CONFIG_PATH environment variable
 No package 'icu-uc' found
-configure:19242: $? = 1
+configure:18757: $? = 1
 No package 'icu-uc' found
-configure:19270: result: no
-configure:19327: checking for icu-config
-configure:19357: result: no
-configure:19376: checking for ICU by using icu-config fallback
-configure:19390: result: no
-configure:19581: checking for FREETYPE
-configure:19589: $PKG_CONFIG --exists --print-errors "$FREETYPE_DEPS"
-configure:19592: $? = 0
-configure:19607: $PKG_CONFIG --exists --print-errors "$FREETYPE_DEPS"
-configure:19610: $? = 0
-configure:19646: result: yes
-configure:19833: checking for Intel atomic primitives
-configure:19856: gcc -o conftest -g -O2   -Bsymbolic-functions conftest.c  >&5
-configure:19856: $? = 0
-configure:19864: result: true
-configure:19873: checking for Solaris atomic operations
-configure:19898: gcc -o conftest -g -O2   -Bsymbolic-functions conftest.c  >&5
+configure:18785: result: no
+configure:18842: checking for icu-config
+configure:18872: result: no
+configure:18891: checking for ICU by using icu-config fallback
+configure:18905: result: no
+configure:19096: checking for FREETYPE
+configure:19104: $PKG_CONFIG --exists --print-errors "$FREETYPE_DEPS"
+configure:19107: $? = 0
+configure:19122: $PKG_CONFIG --exists --print-errors "$FREETYPE_DEPS"
+configure:19125: $? = 0
+configure:19161: result: yes
+configure:19348: checking for Intel atomic primitives
+configure:19371: gcc -o conftest -g -O2   -Bsymbolic-functions conftest.c  >&5
+configure:19371: $? = 0
+configure:19379: result: true
+configure:19388: checking for Solaris atomic operations
+configure:19413: gcc -o conftest -g -O2   -Bsymbolic-functions conftest.c  >&5
 conftest.c:44:12: fatal error: 'atomic.h' file not found
                 #include <atomic.h>
                          ^
 1 error generated.
-configure:19898: $? = 1
+configure:19413: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "HarfBuzz"
@@ -887,10 +887,10 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:19906: result: false
-configure:20100: checking that generated files are newer than configure
-configure:20106: result: done
-configure:20241: creating ./config.status
+configure:19421: result: false
+configure:19615: checking that generated files are newer than configure
+configure:19621: result: done
+configure:19760: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -907,23 +907,23 @@ generated by GNU Autoconf 2.69.  Invocation command line was
 
 on mbp-arielm.local
 
-config.status:1275: creating Makefile
-config.status:1275: creating src/Makefile
-config.status:1275: creating src/hb-version.h
-config.status:1275: creating src/hb-ucdn/Makefile
-config.status:1275: creating util/Makefile
-config.status:1275: creating test/Makefile
-config.status:1275: creating test/api/Makefile
-config.status:1275: creating test/fuzzing/Makefile
-config.status:1275: creating test/shaping/Makefile
-config.status:1275: creating docs/Makefile
-config.status:1275: creating docs/version.xml
-config.status:1275: creating win32/Makefile
-config.status:1275: creating win32/config.h.win32
-config.status:1275: creating config.h
-config.status:1504: executing depfiles commands
-config.status:1504: executing libtool commands
-configure:22691:
+config.status:1280: creating Makefile
+config.status:1280: creating src/Makefile
+config.status:1280: creating src/hb-version.h
+config.status:1280: creating src/hb-ucdn/Makefile
+config.status:1280: creating util/Makefile
+config.status:1280: creating test/Makefile
+config.status:1280: creating test/api/Makefile
+config.status:1280: creating test/fuzzing/Makefile
+config.status:1280: creating test/shaping/Makefile
+config.status:1280: creating docs/Makefile
+config.status:1280: creating docs/version.xml
+config.status:1280: creating win32/Makefile
+config.status:1280: creating win32/config.h.win32
+config.status:1280: creating config.h
+config.status:1509: executing depfiles commands
+config.status:1509: executing libtool commands
+configure:22291:
 
 Build configuration:
 
@@ -1017,8 +1017,6 @@ ac_cv_env_LDFLAGS_set=
 ac_cv_env_LDFLAGS_value=
 ac_cv_env_LIBS_set=
 ac_cv_env_LIBS_value=
-ac_cv_env_LT_SYS_LIBRARY_PATH_set=
-ac_cv_env_LT_SYS_LIBRARY_PATH_value=
 ac_cv_env_PKG_CONFIG_set=
 ac_cv_env_PKG_CONFIG_value=
 ac_cv_env_build_alias_set=
@@ -1057,7 +1055,6 @@ ac_cv_path_GTKDOC_REBASE=/usr/local/bin/gtkdoc-rebase
 ac_cv_path_SED=/usr/bin/sed
 ac_cv_path_ac_pt_PKG_CONFIG=/usr/local/bin/pkg-config
 ac_cv_path_install='/usr/bin/install -c'
-ac_cv_path_lt_DD=/bin/dd
 ac_cv_prog_AWK=awk
 ac_cv_prog_CPP='gcc -E'
 ac_cv_prog_CXXCPP='g++ -E'
@@ -1114,14 +1111,12 @@ lt_cv_prog_gnu_ld=no
 lt_cv_prog_gnu_ldcxx=no
 lt_cv_sharedlib_from_linklib_cmd='printf %s\n'
 lt_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.*[	 ]\([BCDEGRST][BCDEGRST]*\)[	 ][	 ]*_\([_A-Za-z][_A-Za-z0-9]*\)$/\1 _\2 \2/p'\'' | sed '\''/ __gnu_lto/d'\'''
-lt_cv_sys_global_symbol_to_c_name_address='sed -n -e '\''s/^: \(.*\) .*$/  {"\1", (void *) 0},/p'\'' -e '\''s/^[BCDEGRST][BCDEGRST]* .* \(.*\)$/  {"\1", (void *) \&\1},/p'\'''
-lt_cv_sys_global_symbol_to_c_name_address_lib_prefix='sed -n -e '\''s/^: \(.*\) .*$/  {"\1", (void *) 0},/p'\'' -e '\''s/^[BCDEGRST][BCDEGRST]* .* \(lib.*\)$/  {"\1", (void *) \&\1},/p'\'' -e '\''s/^[BCDEGRST][BCDEGRST]* .* \(.*\)$/  {"lib\1", (void *) \&\1},/p'\'''
-lt_cv_sys_global_symbol_to_cdecl='sed -n -e '\''s/^T .* \(.*\)$/extern int \1();/p'\'' -e '\''s/^[BCDEGRST][BCDEGRST]* .* \(.*\)$/extern char \1;/p'\'''
-lt_cv_sys_global_symbol_to_import=
+lt_cv_sys_global_symbol_to_c_name_address='sed -n -e '\''s/^: \([^ ]*\)[ ]*$/  {\"\1\", (void *) 0},/p'\'' -e '\''s/^[BCDEGRST]* \([^ ]*\) \([^ ]*\)$/  {"\2", (void *) \&\2},/p'\'''
+lt_cv_sys_global_symbol_to_c_name_address_lib_prefix='sed -n -e '\''s/^: \([^ ]*\)[ ]*$/  {\"\1\", (void *) 0},/p'\'' -e '\''s/^[BCDEGRST]* \([^ ]*\) \(lib[^ ]*\)$/  {"\2", (void *) \&\2},/p'\'' -e '\''s/^[BCDEGRST]* \([^ ]*\) \([^ ]*\)$/  {"lib\2", (void *) \&\2},/p'\'''
+lt_cv_sys_global_symbol_to_cdecl='sed -n -e '\''s/^T .* \(.*\)$/extern int \1();/p'\'' -e '\''s/^[BCDEGRST]* .* \(.*\)$/extern char \1;/p'\'''
 lt_cv_sys_max_cmd_len=196608
 lt_cv_to_host_file_cmd=func_convert_file_noop
 lt_cv_to_tool_file_cmd=func_convert_file_noop
-lt_cv_truncate_bin='/bin/dd bs=4096 count=1'
 pkg_cv_FONTCONFIG_CFLAGS='-I/usr/local/Cellar/fontconfig/2.11.1/include -I/usr/local/Cellar/freetype/2.5.5/include/freetype2'
 pkg_cv_FONTCONFIG_LIBS='-L/usr/local/Cellar/fontconfig/2.11.1/lib -L/usr/local/Cellar/freetype/2.5.5/lib -lfontconfig -lfreetype'
 pkg_cv_FREETYPE_CFLAGS=-I/usr/local/Cellar/freetype/2.5.5/include/freetype2
@@ -1133,7 +1128,7 @@ pkg_cv_GTKDOC_DEPS_LIBS='-L/usr/local/Cellar/glib/2.50.1/lib -L/usr/local/opt/ge
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/tree/harfbuzz/src/missing aclocal-1.15'
+ACLOCAL='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/deps/harfbuzz/build/src/missing aclocal-1.14'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
@@ -1143,9 +1138,9 @@ AM_DEFAULT_V='$(AM_DEFAULT_VERBOSITY)'
 AM_DEFAULT_VERBOSITY='0'
 AM_V='$(V)'
 AR='ar'
-AUTOCONF='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/tree/harfbuzz/src/missing autoconf'
-AUTOHEADER='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/tree/harfbuzz/src/missing autoheader'
-AUTOMAKE='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/tree/harfbuzz/src/missing automake-1.15'
+AUTOCONF='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/deps/harfbuzz/build/src/missing autoconf'
+AUTOHEADER='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/deps/harfbuzz/build/src/missing autoheader'
+AUTOMAKE='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/deps/harfbuzz/build/src/missing automake-1.14'
 AUTOMAKE_OLDER_THAN_1_13_FALSE=''
 AUTOMAKE_OLDER_THAN_1_13_TRUE='#'
 AWK='awk'
@@ -1185,7 +1180,7 @@ FONTCONFIG_LIBS='-L/usr/local/Cellar/fontconfig/2.11.1/lib -L/usr/local/Cellar/f
 FREETYPE_CFLAGS='-I/usr/local/Cellar/freetype/2.5.5/include/freetype2'
 FREETYPE_DEPS='freetype2 >= 12.0.6'
 FREETYPE_LIBS='-L/usr/local/Cellar/freetype/2.5.5/lib -lfreetype'
-GIT='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/tree/harfbuzz/src/missing git'
+GIT='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/deps/harfbuzz/build/src/missing git'
 GLIB_CFLAGS=''
 GLIB_DEPS='glib-2.0 >= 2.38'
 GLIB_LIBS=''
@@ -1261,6 +1256,14 @@ INSTALL_DATA='${INSTALL} -m 644'
 INSTALL_PROGRAM='${INSTALL}'
 INSTALL_SCRIPT='${INSTALL}'
 INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
+INTROSPECTION_CFLAGS=''
+INTROSPECTION_COMPILER=''
+INTROSPECTION_GENERATE=''
+INTROSPECTION_GIRDIR=''
+INTROSPECTION_LIBS=''
+INTROSPECTION_MAKEFILE=''
+INTROSPECTION_SCANNER=''
+INTROSPECTION_TYPELIBDIR=''
 LD='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld'
 LDFLAGS=' -Bsymbolic-functions'
 LIBOBJS=''
@@ -1269,8 +1272,7 @@ LIBTOOL='$(SHELL) $(top_builddir)/libtool'
 LIPO='lipo'
 LN_S='ln -s'
 LTLIBOBJS=''
-LT_SYS_LIBRARY_PATH=''
-MAKEINFO='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/tree/harfbuzz/src/missing makeinfo'
+MAKEINFO='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/deps/harfbuzz/build/src/missing makeinfo'
 MANIFEST_TOOL=':'
 MKDIR_P='./install-sh -c -d'
 NM='/usr/bin/nm -B'
@@ -1293,7 +1295,7 @@ PKG_CONFIG='/usr/local/bin/pkg-config'
 PTHREAD_CC='gcc'
 PTHREAD_CFLAGS='-D_THREAD_SAFE -pthread'
 PTHREAD_LIBS=''
-RAGEL='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/tree/harfbuzz/src/missing ragel'
+RAGEL='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/deps/harfbuzz/build/src/missing ragel'
 RANLIB='ranlib'
 SED='/usr/bin/sed'
 SET_MAKE=''
@@ -1339,7 +1341,7 @@ host_vendor='apple'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/tree/harfbuzz/src/install-sh'
+install_sh='${SHELL} /Users/arielm/Documents/DEV2/chronotext-cross/deps/harfbuzz/build/src/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
