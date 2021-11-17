@@ -1,8 +1,8 @@
 /*=============================================================================
     Copyright (c) 2014 Eric Niebler
-    Copyright (c) 2014 Kohei Takahashi
+    Copyright (c) 2014,2015,2018 Kohei Takahashi
 
-    Distributed under the Boost Software License, Version 1.0. (See accompanying 
+    Distributed under the Boost Software License, Version 1.0. (See accompanying
     file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 ==============================================================================*/
 #if !defined(FUSION_SUPPORT_CONFIG_01092014_1718)
@@ -10,6 +10,7 @@
 
 #include <boost/config.hpp>
 #include <boost/detail/workaround.hpp>
+#include <utility>
 
 #ifndef BOOST_FUSION_GPU_ENABLED
 #define BOOST_FUSION_GPU_ENABLED BOOST_GPU_ENABLED
@@ -78,13 +79,41 @@ namespace boost { namespace fusion { namespace detail
 // - MSVC 10.0 implements iterator intrinsics; MSVC 13.0 implements LWG2408.
 #if (defined(BOOST_LIBSTDCXX_VERSION) && (BOOST_LIBSTDCXX_VERSION < 40500) && \
      defined(BOOST_LIBSTDCXX11)) || \
-    (defined(BOOST_MSVC) && (1600 <= BOOST_MSVC || BOOST_MSVC < 1900))
+    (defined(BOOST_MSVC) && (1600 <= BOOST_MSVC && BOOST_MSVC < 1900))
 #   define BOOST_FUSION_WORKAROUND_FOR_LWG_2408
 namespace std
 {
     template <typename>
     struct iterator_traits;
 }
+#endif
+
+
+// Workaround for older GCC that doesn't accept `this` in constexpr.
+#if BOOST_WORKAROUND(BOOST_GCC, < 40700)
+#define BOOST_FUSION_CONSTEXPR_THIS
+#else
+#define BOOST_FUSION_CONSTEXPR_THIS BOOST_CONSTEXPR
+#endif
+
+
+// Workaround for compiler which doesn't compile decltype(expr)::type.
+// It expects decltype(expr) deduced as mpl::identity<T>.
+#if BOOST_WORKAROUND(BOOST_MSVC, BOOST_TESTED_AT(1913)) || BOOST_WORKAROUND(BOOST_GCC, < 40700)
+#   include <boost/mpl/identity.hpp>
+#   define BOOST_FUSION_IDENTIFIED_TYPE(parenthesized_expr) \
+        boost::mpl::identity<decltype parenthesized_expr>::type::type
+#else
+#   define BOOST_FUSION_IDENTIFIED_TYPE(parenthesized_expr) \
+        decltype parenthesized_expr ::type
+#endif
+
+
+// Workaround for GCC 4.6 that rejects defaulted function with noexcept.
+#if BOOST_WORKAROUND(BOOST_GCC, / 100 == 406)
+#   define BOOST_FUSION_NOEXCEPT_ON_DEFAULTED
+#else
+#   define BOOST_FUSION_NOEXCEPT_ON_DEFAULTED BOOST_NOEXCEPT
 #endif
 
 #endif
